@@ -262,7 +262,7 @@ function App() {
         <h1>Examples of AI Improving AI</h1>
         <b>Author:</b> Thomas Woodside, Center for AI Safety
         <br/>
-        <b>Contributors:</b> James Campbell, Jun Shern Chan, Aidan O'Gara, Dan Hendrycks, Esben Kran, Nathaniel Li, Mantas Mazeika, Zach Stein-Perlman,
+        <b>Contributors:</b> James Campbell, Jun Shern Chan, Aidan O'Gara, Dan Hendrycks, Esben Kran, Nathaniel Li, Mantas Mazeika, Aaron Scher, Zach Stein-Perlman,
         Oliver Zhang.
         <p style={{textAlign: "justify"}}>
           As machine learning algorithms become more capable of outperforming humans on some narrow tasks, they
