@@ -260,7 +260,7 @@ function App() {
     <div className="App">
       <Container maxWidth="md">
         <h1>Examples of AI Improving AI</h1>
-        <b>Author:</b> Thomas Woodside, Center for AI Safety
+        <b>Author:</b> Thomas Woodside, <a href="https://safe.ai">Center for AI Safety</a>
         <br/>
         <b>Contributors:</b> James Campbell, Jun Shern Chan, Aidan O'Gara, Dan Hendrycks, Esben Kran, Nathaniel Li, Mantas Mazeika, Aaron Scher, Zach Stein-Perlman,
         Oliver Zhang.
