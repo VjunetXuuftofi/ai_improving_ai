@@ -241,12 +241,30 @@ const rows = [
   },
   {
     id: 23,
-    description: "Uses language models with evolutionary prompt engineering todesign model architectures.",
+    description: "Uses ChatGPT to augment data for NLP tasks.",
+    source: "https://arxiv.org/abs/2302.13007",
+    date: new Date(2023, 1, 25),
+    submitter: "Nathaniel Li",
+    authors: "Dai et al.",
+    authorAffiliations: "Google"
+  },
+  {
+    id: 24,
+    description: "Uses language models with evolutionary prompt engineering to design model architectures.",
     source: "https://arxiv.org/abs/2302.14838",
     date: new Date(2023, 1, 28),
     submitter: "Thomas Woodside",
     authors: "Chen et al.",
     authorAffiliations: "Google"
+  },
+  {
+    id: 25,
+    description: "Prompted GPT-3 to generate an instruction-following dataset that's used to fine tune another language model.",
+    source: "https://crfm.stanford.edu/2023/03/13/alpaca.html",
+    date: new Date(2023, 2, 13),
+    submitter: "Nathaniel Li",
+    authors: "Taori et al.",
+    authorAffiliations: "Stanford"
   },
 ];
 
@@ -286,7 +304,6 @@ function App() {
           able to review all recent AI papers. The "author" and "author affiliation" columns refer to the authors of
           the paper; the "submitter" column refers to the person who originally brought the paper to my attention. If you
           know of an example not mentioned here, you may submit more <a href={"https://forms.gle/V6wukPMST6tw2PrB8"}>here</a>.
-
           <br/><br/>
           [1] Nick Bostrom, Superintelligence
           <br/>
