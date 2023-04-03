@@ -111,7 +111,7 @@ const rows = [
     date: new Date(2022, 2, 17),
     submitter: "Zach Stein-Perlman",
     authors: "Kumar, Yazdanbakhsh et al.",
-    authorAffiliations: "Google, UC Berkeley"
+    authorAffiliations: "Google & UC Berkeley"
   },
   {
     id: 9,
@@ -120,7 +120,7 @@ const rows = [
     date: new Date(2022, 2, 28),
     submitter: "Nathaniel Li",
     authors: "Zelikman et al.",
-    authorAffiliations: "Stanford University, Google"
+    authorAffiliations: "Stanford & Google"
   },
   {
     id: 10,
@@ -138,7 +138,7 @@ const rows = [
     date: new Date(2022, 6, 6),
     submitter: "Oliver Zhang",
     authors: "Trofin, Qian et al.",
-    authorAffiliations: "Google, Carnegie Mellon University"
+    authorAffiliations: "Google & CMU"
   },
   {
     id: 12,
@@ -183,7 +183,7 @@ const rows = [
     date: new Date(2022, 8, 30),
     submitter: "Thomas Woodside",
     authors: "Huang et al.",
-    authorAffiliations: "University of Illinois at Urbana-Champaign, Google"
+    authorAffiliations: "UIUC & Google"
   },
   {
     id: 17,
@@ -214,20 +214,20 @@ const rows = [
   },
   {
     id: 20,
-    description: "Uses language models to generate examples of instruction following, which are then used to finetune language models.",
-    source: "https://arxiv.org/abs/2212.10560",
-    date: new Date(2022, 11, 20),
-    submitter: "Nathaniel Li",
-    authors: "Wong et al.",
-    authorAffiliations: "Various"
-  },
-  {
-    id: 21,
     description: "Uses a language model to create evaluations that test language models.",
     source: "https://arxiv.org/abs/2212.09251",
     date: new Date(2022, 11, 19),
     submitter: "Aaron Scher",
     authors: "Perez et al.",
+    authorAffiliations: "Various"
+  },
+  {
+    id: 21,
+    description: "Uses language models to generate examples of instruction following, which are then used to finetune language models.",
+    source: "https://arxiv.org/abs/2212.10560",
+    date: new Date(2022, 11, 20),
+    submitter: "Nathaniel Li",
+    authors: "Wong et al.",
     authorAffiliations: "Various"
   },
   {
@@ -237,7 +237,7 @@ const rows = [
     date: new Date(2023, 1, 7),
     submitter: "Aidan O'Gara",
     authors: "Chen et al.",
-    authorAffiliations: "Columbia University, Amazon Alexa AI"
+    authorAffiliations: "Columbia & Amazon Alexa AI"
   },
   {
     id: 23,
@@ -266,6 +266,33 @@ const rows = [
     authors: "Taori et al.",
     authorAffiliations: "Stanford"
   },
+  {
+    id: 26,
+    description: "Language model gives itself feedback to improve its own generations.",
+    source: "https://arxiv.org/abs/2303.17651",
+    date: new Date(2023, 2, 30),
+    submitter: "Andy Zou",
+    authors: "Madaan et al.",
+    authorAffiliations: "Various"
+  },
+  {
+    id: 27,
+    description: "Uses a language model as a reward model to augment the language model pretraining objective.",
+    source: "https://arxiv.org/abs/2302.08582",
+    date: new Date(2023, 1, 16),
+    submitter: "Thomas Woodside",
+    authors: "Korbak et al.",
+    authorAffiliations: "Various"
+  },
+  {
+    id: 28,
+    description: "Uses a language model to pick the best refinement of a response based on language feedback.",
+    source: "https://arxiv.org/abs/2303.16755",
+    date: new Date(2023, 2, 28),
+    submitter: "Thomas Woodside",
+    authors: "Scheurer et al.",
+    authorAffiliations: "Various"
+  },
 ];
 
 function AIImprovingAIDataGrid() {
@@ -277,6 +304,11 @@ function AIImprovingAIDataGrid() {
             pageSize={5}
             rowsPerPageOptions={[5]}
             disableSelectionOnClick
+            initialState={{
+              sorting: {
+                sortModel: [{ field: 'date', sort: 'desc' }],
+              },
+            }}
         />
       </Box>
   );
@@ -309,7 +341,7 @@ function App() {
           <br/>
           [2] Joseph Carlsmith, <a href={"https://arxiv.org/abs/2206.13353"}>Is Power-seeking AI An Existential Risk?</a>
           <br/>
-          [3] Dan Hendrycks, Natural Selection Favors AIs Over Humans (forthcoming)
+          [3] Dan Hendrycks, <a href={"https://arxiv.org/abs/2303.16200"}>Natural Selection Favors AIs Over Humans</a>
         </p>
       </Container>
       <Container maxWidth="m">
