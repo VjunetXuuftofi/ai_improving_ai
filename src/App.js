@@ -293,15 +293,33 @@ const rows = [
     authors: "Scheurer et al.",
     authorAffiliations: "Various"
   },
+  {
+    id: 29,
+    description: "Uses a language model to generate a refinement of a code completion based on language feedback.",
+    source: "https://arxiv.org/abs/2303.16749",
+    date: new Date(2023, 2, 28),
+    submitter: "Jason Phang",
+    authors: "Chen et al.",
+    authorAffiliations: "Various"
+  },
+  {
+    id: 30,
+    description: "GPT-4 can be used to perform neural architecture search.",
+    source: "https://arxiv.org/abs/2304.10970",
+    date: new Date(2023, 3, 21),
+    submitter: "Fred Zhang",
+    authors: "Zheng et al.",
+    authorAffiliations: "Various"
+  }
 ];
 
 function AIImprovingAIDataGrid() {
   return (
-      <Box sx={{ height: 400, width: '100%' }}>
+      <Box sx={{ height: 630, width: '100%' }}>
         <DataGrid
             rows={rows}
             columns={columns}
-            pageSize={5}
+            pageSize={10}
             rowsPerPageOptions={[5]}
             disableSelectionOnClick
             initialState={{
