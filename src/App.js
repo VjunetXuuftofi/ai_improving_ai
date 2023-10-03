@@ -71,8 +71,8 @@ const rows = [
   {
     id: 4,
     description: "Semantic segmentation models allow humans to label training images more quickly.",
-    source: "https://www.nature.com/articles/nature16961",
-    date: new Date(2018, 9, 22),
+    source: "https://arxiv.org/abs/1806.07527",
+    date: new Date(2018, 5, 20),
     submitter: "Dan Hendrycks",
     authors: "Andriluka et al.",
     authorAffiliations: "Google"
@@ -143,7 +143,7 @@ const rows = [
   {
     id: 12,
     description: "Reinforcement learning used to generate nearly 13,000 circuits in GPUs.",
-    source: "https://ai.googleblog.com/2022/03/offline-optimization-for-architecting.html",
+    source: "https://developer.nvidia.com/blog/designing-arithmetic-circuits-with-deep-reinforcement-learning/",
     date: new Date(2022, 6, 8),
     submitter: "Thomas Woodside",
     authors: "Roy et al.",
@@ -209,7 +209,7 @@ const rows = [
     source: "https://www.anthropic.com/constitutional.pdf",
     date: new Date(2022, 11, 15),
     submitter: "Thomas Woodside",
-    authors: "Bai et al.",
+    authors: "Bowman et al.",
     authorAffiliations: "Anthropic"
   },
   {
@@ -227,7 +227,7 @@ const rows = [
     source: "https://arxiv.org/abs/2212.10560",
     date: new Date(2022, 11, 20),
     submitter: "Nathaniel Li",
-    authors: "Wong et al.",
+    authors: "Wang et al.",
     authorAffiliations: "Various"
   },
   {
@@ -286,7 +286,7 @@ const rows = [
   },
   {
     id: 28,
-    description: "Uses a language model to pick the best refinement of a response based on language feedback.",
+    description: "Uses a language model to pick the best refinement of an LLM response based on language feedback.",
     source: "https://arxiv.org/abs/2303.16755",
     date: new Date(2023, 2, 28),
     submitter: "Thomas Woodside",
@@ -310,6 +310,87 @@ const rows = [
     submitter: "Fred Zhang",
     authors: "Zheng et al.",
     authorAffiliations: "Various"
+  },
+  {
+    id: 31,
+    description: "Uses language models to augment genetic algorithm, the output of which serves as training data for an LLM.",
+    source: "https://arxiv.org/abs/2304.10970",
+    date: new Date(2022, 5, 17),
+    submitter: "Herbie Bradley",
+    authors: "Lehman et al.",
+    authorAffiliations: "OpenAI"
+  },
+  {
+    id: 32,
+    description: "Uses LLMs to help automate ML experiments.",
+    source: "https://arxiv.org/abs/2305.02499",
+    date: new Date(2023, 4, 4),
+    submitter: "",
+    authors: "Zhang et al.",
+    authorAffiliations: "UT Austin"
+  },
+  {
+    id: 33,
+    description: "Uses LLMs feedback for LLM prompt engineering.",
+    source: "https://arxiv.org/abs/2305.03495",
+    date: new Date(2023, 4, 4),
+    submitter: "Zach Stein-Perlman",
+    authors: "Pryzant et al.",
+    authorAffiliations: "Microsoft"
+  },
+  {
+    id: 34,
+    description: "Uses LLMs to debug LLM code outputs without access to unit tests.",
+    source: "https://arxiv.org/abs/2304.05128",
+    date: new Date(2023, 3, 11),
+    submitter: "Zach Stein-Perlman",
+    authors: "Chen et al.",
+    authorAffiliations: "Google & UC Berkeley"
+  },
+  {
+    id: 35,
+    description: "Uses LLMs for prompt engineering.",
+    source: "https://arxiv.org/abs/2211.01910",
+    date: new Date(2022, 10, 3),
+    submitter: "Zach Stein-Perlman",
+    authors: "Zhou et al.",
+    authorAffiliations: "Various"
+  },
+  {
+    id: 36,
+    description: "Language model used to generate prompts that could correspond to training data, filter them, with the data used to train a stronger language model.",
+    source: "https://arxiv.org/abs/2308.06259",
+    date: new Date(2023, 7, 3),
+    submitter: "",
+    authors: "Li et al.",
+    authorAffiliations: "Meta"
+  },
+  {
+    id: 37,
+    description: "LLM used to help refine prompts for vision-language models.",
+    source: "https://arxiv.org/abs/2309.05950",
+    date: new Date(2023, 8, 12),
+    submitter: "Aidan O'Gara",
+    authors: "Liu et al.",
+    authorAffiliations: "CMU"
+  },
+  {
+    id: 38,
+    description: "LLMs used for genetic algorithm to generate LLM prompts.",
+    source: "https://arxiv.org/abs/2309.05950",
+    date: new Date(2023, 8,28),
+    submitter: "Zach Stein-Perlman",
+    authors: "Fernando et al.",
+    authorAffiliations: "DeepMind"
+  },
+  {
+    id: 39,
+    description: "Fine tuned decision transformer used to generate data that is then used to retrain a new version of the base model in a loop.",
+    source: "https://arxiv.org/abs/2306.11706",
+    date: new Date(2023, 5,20),
+    submitter: "Thomas Woodside",
+    authors: "Bousmalis et al.",
+    authorAffiliations: "DeepMind"
   }
 ];
 
@@ -339,8 +420,10 @@ function App() {
         <h1>Examples of AI Improving AI</h1>
         <b>Author:</b> Thomas Woodside, <a href="https://safe.ai">Center for AI Safety</a>
         <br/>
-        <b>Contributors:</b> James Campbell, Jun Shern Chan, Aidan O'Gara, Dan Hendrycks, Esben Kran, Nathaniel Li, Mantas Mazeika, Aaron Scher, Zach Stein-Perlman,
-        Oliver Zhang, Andy Zou.
+        <b>Contributors:</b> Herbie Bradley, James Campbell, Jun Shern Chan, Aidan O'Gara, Dan Hendrycks, Esben Kran, Nathaniel Li, Mantas Mazeika, Aaron Scher, Zach Stein-Perlman,
+        Fred Zhang, Oliver Zhang, Andy Zou.
+        <br/>
+        <b>Last Updated:</b> October 2, 2023
         <p style={{textAlign: "justify"}}>
           As machine learning algorithms become more capable of outperforming humans on some narrow tasks, they
           are increasingly being used to make improvements to themselves or other machine learning systems, or inputs
