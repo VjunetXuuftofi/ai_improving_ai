@@ -435,8 +435,9 @@ function App() {
           The table below collects some current examples of AI systems being used to improve AI systems. It should not be
           taken as an exhaustive list, since these applications can occur in many subsets of AI and we have not been
           able to review all recent AI papers. The "author" and "author affiliation" columns refer to the authors of
-          the paper; the "submitter" column refers to the person who originally brought the paper to my attention. If you
-          know of an example not mentioned here, you may submit more <a href={"https://forms.gle/V6wukPMST6tw2PrB8"}>here</a>.
+          the paper; the "submitter" column refers to the person who originally brought the paper to my attention.
+
+          This site is no longer maintained. For a longer list not maintained or endorsed by the authors here, please see <a href="https://ai-improving-ai.com">ai-improving-ai.com</a>
           <br/><br/>
           [1] Nick Bostrom, Superintelligence
           <br/>
